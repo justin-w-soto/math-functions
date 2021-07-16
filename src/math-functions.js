@@ -127,7 +127,7 @@ export function multiplyArrayWithThreeNumbers(multArr) { //eslint-disable-line
     questionFiveReturnArray[0] = finalProduct;
   
     // create string and assign to index 1
-    questionFiveReturnArray[1] = `The numbers ${multArr[0]},${multArr[1]},${multArr[2]} have a product of ${finalProduct}.`
+    questionFiveReturnArray[1] = `The numbers ${multArr[0]},${multArr[1]},${multArr[2]} have a product of ${finalProduct}.`;
     // return array
     return questionFiveReturnArray;
 }
