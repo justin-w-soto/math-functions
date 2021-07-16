@@ -116,7 +116,20 @@ you may continue to use the + operator for string concatenation.
 */
 
 export function multiplyArrayWithThreeNumbers(multArr) { //eslint-disable-line
-
+    let questionFiveReturnArray = [];
+    // calculate product of first two values
+    let aTimesB = multiply((multArr[0]), (multArr[1]));
+    aTimesB = aTimesB[0];
+  
+    // calculate final product and assign to index 0
+    let finalProduct = multiply(aTimesB, multArr[2]);
+    finalProduct = finalProduct[0];
+    questionFiveReturnArray[0] = finalProduct;
+  
+    // create string and assign to index 1
+    questionFiveReturnArray[1] = `The numbers ${multArr[0]},${multArr[1]},${multArr[2]} have a product of ${finalProduct}.`;
+    // return array
+    return questionFiveReturnArray;
 }
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
@@ -136,9 +149,9 @@ IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To
 This function should be dynamic, accepting an array of any length.
 */
 
-export function multiplyAnyArray(dynamicArray) { //eslint-disable-line
+// export function multiplyAnyArray(dynamicArray) { //eslint-disable-line
 
-}
+
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 // You're done! Submit the link to the repo following the instructions in Canvas.
